@@ -1,9 +1,9 @@
-Aula 01 - Como iniciar e organizar o seu projeto .
-Aula 02 - Criação da area de login .
-Aula 03 - pequenas alterações no login e criação de cadastro.
-Aula 04 - Criação da primeira tabela e inserção no banco .
-Aula 05 - Autenticação ( Validação ) de login , criação da sessao. 
-Aula 06 - criação de logout e comecando a criar layout e corpo.
+<strong>Aula 01</strong> - Como iniciar e organizar o seu projeto .<br>
+<strong>Aula 02</strong> - Criaï¿½ï¿½o da area de login .<br>
+<strong>Aula 03</strong> - pequenas alteraï¿½ï¿½es no login e criaï¿½ï¿½o de cadastro.<br>
+<strong>Aula 04</strong> - Criaï¿½ï¿½o da primeira tabela e inserï¿½ï¿½o no banco .<br>
+<strong>Aula 05</strong> - Autenticaï¿½ï¿½o ( Validaï¿½ï¿½o ) de login , criaï¿½ï¿½o da sessao. <br>
+<strong>Aula 06</strong>- criaï¿½ï¿½o de logout e comecando a criar layout e corpo.<br>
 
 
 https://github.com/LuizFernando1176/CatalogoFilmes.git
