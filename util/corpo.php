@@ -13,7 +13,7 @@ function cabeca() {
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>RoyalUI Admin</title>
+        <title>Sistema de Filmes e Serie</title>
         <link rel="stylesheet" href="css/themify-icons.css">
         <link rel="stylesheet" href="css/vendor.bundle.base.css">
         <link rel="stylesheet" href="css/style.css">
