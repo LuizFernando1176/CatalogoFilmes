@@ -1,28 +1,99 @@
-<?php
-include_once '../util/conectarBD.php';
+<?php 
+include_once '../util/config.php';
 
-$nome = $_POST ['nome'];//variavel post relacionada ao nome que vai vim do formulario 
-$senha = $_POST ['senha'];//variavel post relacionada a senha que vai vim do formulario 
-$idade = $_POST ['idade'];//variavel post relacionada a idade que vai vim do formulario 
+?>
+<html lang="en">
 
-//query responsavel pela insercao dos dados no banco 
-$queryAdicionaFilme = "INSERT INTO `usuario`( `nome`, `senha`, `idade`) VALUES ('$nome','$senha','$idade')";
-//objeto variavelpara coneccao 
-$coon = conectar();
-//realizando a adicao
-$resultado = mysqli_query($coon, $queryAdicionaFilme);
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Catalogo de Filmes | Resgistra-se</title>
+        <link rel="stylesheet" href="<?php echo urlbase(); ?>/css/themify-icons.css">
+        <link rel="stylesheet" href="<?php echo urlbase(); ?>/css/vendor.bundle.base.css">
+        <link rel="stylesheet" href="<?php echo urlbase(); ?>/css/style.css">
+        <link rel="shortcut icon" href="<?php echo urlbase(); ?>/img/favicon.png" />
+    </head>
+    <body >
+        <div class="container-scroller">
+            <div class="container-fluid page-body-wrapper full-page-wrapper">
+                <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
+                    <div class="row flex-grow">
+                        <div class="col-lg-6 d-flex align-items-center justify-content-center" style="background-color: black ; color: white">
+                            <div class="auth-form-transparent text-left p-3">
+                                <center> <div class="brand-logo">
+                                        <img src="<?php echo urlbase(); ?>/img/logo.svg" alt="logo">
+                                    </div>
+                                    <h4>Seja Bem Vindo!</h4>
+                                    <h6 class="font-weight-light">Prossiga para cadastro!</h6></center>
+                                    <form class="pt-3" method="POST" action="../inserir/inserirUsuario.php">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend bg-transparent">
+                                                <span class="input-group-text bg-transparent border-right-0">
+                                                    <i class="ti-user text-primary"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" class="form-control form-control-lg border-left-0" placeholder="Nome" name="login" id="login">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Senha</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend bg-transparent">
+                                                <span class="input-group-text bg-transparent border-right-0">
+                                                    <i class="ti-email text-primary"></i>
+                                                </span>
+                                            </div>
+                                            <input type="password" name="senha" id="senha" class="form-control form-control-lg border-left-0" placeholder="*******">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Idade</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend bg-transparent">
+                                                <span class="input-group-text bg-transparent border-right-0">
+                                                    <i class="ti-email text-primary"></i>
+                                                </span>
+                                            </div>
+                                            <input type="text" name="idade" id="idade" class="form-control form-control-lg border-left-0" placeholder="Qual sua Idade?">
+                                        </div>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="form-check">
+                                            <label class="form-check-label text-muted">
+                                                <input type="checkbox" class="form-check-input" required="">
+                                                Por Favor aceite os termos de condições.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <button type="submit" class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn">Cadastrar</button>
+                                    </div>
+                                    <div class="text-center mt-4 font-weight-light">
+                                        Você já tem uma conta? <a href="<?php echo urlbase(); ?>/login.php" class="text-primary">Login</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 login-half-bg d-flex flex-row">
+                            <p class="text-white font-weight-medium text-center flex-grow align-self-end">Copyright &copy; 2019  Todos direitos resevados.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+        </div>
+        <script src="<?php echo urlbase(); ?>/js/vendor.bundle.base.js"></script>
+        <script src="<?php echo urlbase(); ?>/js/Chart.min.js"></script>
+        <script src="<?php echo urlbase(); ?>/js/off-canvas.js"></script>
+        <script src="<?php echo urlbase(); ?>/js/hoverable-collapse.js"></script>
+        <script src="<?php echo urlbase(); ?>/js/template.js"></script>
+        <script src="<?php echo urlbase(); ?>/js/todolist.js"></script>
+        <script src="<?php echo urlbase(); ?>/js/dashboard.js"></script>
 
-// condiçao para adicao 
+    </body>
 
-if($resultado){
-    
-    echo 'Usuario cadastrado'; // se de certo entra neste echo 
-    
-} else {
-    
-    echo 'Usuario não cadsatrado';// caso nao entrei neste 
-}
-;
-
-
+</html>
 

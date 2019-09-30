@@ -14,18 +14,18 @@ function cabeca() {
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Sistema de Filmes e Serie</title>
-        <link rel="stylesheet" href="css/themify-icons.css">
-        <link rel="stylesheet" href="css/vendor.bundle.base.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="stylesheet" href="' . urlbase() . '/css/themify-icons.css">
+        <link rel="stylesheet" href="' . urlbase() . '/css/vendor.bundle.base.css">
+        <link rel="stylesheet" href="' . urlbase() . '/css/style.css">
+        <link rel="shortcut icon" href="' . urlbase() . '/img/favicon.png" />
     </head>
     <body>
         <div class="container-scroller">
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="images/logo.svg" class="mr-2" alt="logo"/></a>
-                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo mr-5" href="index.html"><img src="' . urlbase() . '/img/logo.svg" class="mr-2" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="' . urlbase() . '/img/logo-mini.svg" alt="logo"/></a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -53,7 +53,7 @@ function cabeca() {
                                     <i class="ti-settings text-primary"></i>
                                     Settings
                                 </a>
-                                <a class="dropdown-item" href="sair.php">
+                                <a class="dropdown-item" href="' . urlbase() . '/sair.php">
                                     <i class="ti-power-off text-primary"></i>
                                     Logout
                                 </a>
@@ -71,7 +71,7 @@ function cabeca() {
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php">
+                            <a class="nav-link" href="' . urlbase() . '/index.php">
                                 <i class="ti-shield menu-icon"></i>
                                 <span class="menu-title">Inicio</span>
                             </a>
@@ -112,13 +112,13 @@ function rodape() {
             </div>
             <!-- page-body-wrapper ends -->
         </div>
-        <script src="js/vendor.bundle.base.js"></script>
-        <script src="js/Chart.min.js"></script>
-        <script src="js/off-canvas.js"></script>
-        <script src="js/hoverable-collapse.js"></script>
-        <script src="js/template.js"></script>
-        <script src="js/todolist.js"></script>
-        <script src="js/dashboard.js"></script>
+        <script src="' . urlbase() . '/js/vendor.bundle.base.js"></script>
+        <script src="' . urlbase() . '/js/Chart.min.js"></script>
+        <script src="' . urlbase() . '/js/off-canvas.js"></script>
+        <script src="' . urlbase() . '/js/hoverable-collapse.js"></script>
+        <script src="' . urlbase() . '/js/template.js"></script>
+        <script src="' . urlbase() . '/js/todolist.js"></script>
+        <script src="' . urlbase() . '/js/dashboard.js"></script>
 
     </body>
 

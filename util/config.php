@@ -8,3 +8,15 @@ function testaSessao() { //função responsavel para testar o login
     }
 }
 
+function urlbase() {
+
+    if (!empty($_SERVER['HTTPS']) && ('on' == $_SERVER['HTTPS'])) {
+        $protocol = 'https://';
+    } else {
+        $protocol = 'http://';
+    }
+    $url = $protocol . $_SERVER['HTTP_HOST'] . '/catalogoFilmes';
+    return $url;
+}
+
+?>

@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/themify-icons.css">
         <link rel="stylesheet" href="css/vendor.bundle.base.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" href="images/favicon.png" />
+        <link rel="shortcut icon" href="img/favicon.png" />
     </head>
     <body >
         <div class="container-scroller">
@@ -17,9 +17,9 @@
                 <div class="content-wrapper d-flex align-items-stretch auth auth-img-bg">
                     <div class="row flex-grow">
                         <div class="col-lg-6 d-flex align-items-center justify-content-center" style="background-color: black ; color: white">
-                            <div class="auth-form-transparent text-left p-3">
+                            <div class="auth-form-transparent text-left p-3 ">
                                <center> <div class="brand-logo">
-                                    <img src="images/logo.svg" alt="logo">
+                                    <img src="img/logo.svg" alt="logo">
                                 </div>
                                   <h4>Seja Bem Vindo!</h4>
                                     <h6 class="font-weight-light">Estamos Feliz de ver você novamente!</h6></center>
@@ -59,7 +59,7 @@
                                         <button class="btn btn-block btn-success btn-lg font-weight-medium auth-form-btn" type="submit">Logar</button>
                                     </div>
                                     <div class="text-center mt-4 font-weight-light">
-                                        Deseja criar uma conta? <a href="cadastrar.php" class="text-primary">Criar</a>
+                                        Deseja criar uma conta? <a href="cadastros/cadastrarUsuario.php" class="text-primary">Criar</a>
                                     </div>
                                 </form>
                             </div>
