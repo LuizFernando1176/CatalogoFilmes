@@ -1,11 +1,11 @@
 <?php
+
 include_once 'config.php';
-    testaSessao();
-    $usuarioLogado = json_decode($_SESSION["gmUsuarioLogado"], true);
-// estes conjuntos de função são criados para que não precise se repetido o codigo do corpo do sistema 
+testaSessao();
+$usuarioLogado = json_decode($_SESSION["gmUsuarioLogado"], true);
 
 function cabeca() {
-    
+
 
     echo '
 <html lang="en">
@@ -49,10 +49,6 @@ function cabeca() {
                                 <button class="ti-menu btn btn-dark"> Menu</button>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                                <a class="dropdown-item">
-                                    <i class="ti-settings text-primary"></i>
-                                    Settings
-                                </a>
                                 <a class="dropdown-item" href="' . urlbase() . '/sair.php">
                                     <i class="ti-power-off text-primary"></i>
                                     Logout
@@ -77,24 +73,6 @@ function cabeca() {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="ti-layout-list-post menu-icon"></i>
-                                <span class="menu-title">Cadastrar Filmes</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="ti-view-list-alt menu-icon"></i>
-                                <span class="menu-title">Cadastrar Series</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                              <a class="nav-link" href="' . urlbase() . '/pictures/index.php">
-                                <i class="ti-archive menu-icon"></i>
-                                <span class="menu-title">Hospedar Imagens</span>
-                            </a>
-                        </li>
-                         <li class="nav-item">
                               <a class="nav-link" href="#">
                                 <i class="ti-user menu-icon"></i>
                                 <span class="menu-title">Perfil</span>

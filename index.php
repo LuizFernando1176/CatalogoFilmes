@@ -1,6 +1,6 @@
 <?php 
 // no codigo so chamanos a função para isso incluimos o corpo
-include_once './util/corpo.php';
+include_once 'util/corpo.php';
 cabeca();
 ?>
 <!-- partial -->

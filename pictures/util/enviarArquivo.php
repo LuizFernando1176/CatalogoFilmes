@@ -1,5 +1,5 @@
 <?php
-include_once '../util/corpo.php';
+include_once 'corpo02.php';
 //$urlSite=""; // implementar a variavel do site 
 cabeca();
 ?>
@@ -11,7 +11,7 @@ cabeca();
             <div class="col-md-12 grid-margin">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
-                       
+
                     </div>
                     <div>
                     </div>
@@ -21,31 +21,17 @@ cabeca();
 
 
         <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
+            <div class="col-md-12 col-xl-12 col-sm ">
                 <div class="card text-center" >
                     <div class="card-body">
-                        
+
                         <div class="row">
-                            <div class="col-md-12 col-xl-10">
+                            <div class="col-md-9 col-xl-12 col-sm-12">
 
                                 <?php
                                 if (isset($_FILES['arquivo']['name']) && ($_FILES['img01']['name']) && ($_FILES['img02']['name']) && $_FILES['arquivo']['error'] == 0) {
                                     echo '<div class="card-body">';
-                                    echo 'Você enviou o arquivo: <strong>' . $_FILES['arquivo']['name'] . '</strong><br />';
-                                    echo 'Este arquivo é do tipo: <strong > ' . $_FILES['arquivo']['type'] . ' </strong ><br />';
-                                    echo 'Temporáriamente foi salvo em: <strong>' . $_FILES['arquivo']['tmp_name'] . '</strong><br />';
-                                    echo 'Seu tamanho é: <strong>' . $_FILES['arquivo']['size'] . '</strong> Bytes<br />';
-                                    echo '<br />---------------------------------------------------------------------------------------<br />';
-                                    echo 'Você enviou o arquivo: <strong>' . $_FILES['img01']['name'] . '</strong><br />';
-                                    echo 'Este arquivo é do tipo: <strong > ' . $_FILES['img01']['type'] . ' </strong ><br />';
-                                    echo 'Temporáriamente foi salvo em: <strong>' . $_FILES['img01']['tmp_name'] . '</strong><br />';
-                                    echo 'Seu tamanho é: <strong>' . $_FILES['img01']['size'] . '</strong> Bytes<br />';
-                                    echo '<br />---------------------------------------------------------------------------------------<br />';
-                                    echo 'Você enviou o arquivo: <strong>' . $_FILES['img02']['name'] . '</strong><br />';
-                                    echo 'Este arquivo é do tipo: <strong > ' . $_FILES['img02']['type'] . ' </strong ><br />';
-                                    echo 'Temporáriamente foi salvo em: <strong>' . $_FILES['img02']['tmp_name'] . '</strong><br />';
-                                    echo 'Seu tamanho é: <strong>' . $_FILES['img02']['size'] . '</strong> Bytes<br />';
-                                    echo '<br />---------------------------------------------------------------------------------------<br />';
+
 
                                     $arquivo_tmp = $_FILES['arquivo']['tmp_name'];
                                     $arquivo_tmp2 = $_FILES['img01']['tmp_name'];
@@ -83,18 +69,13 @@ cabeca();
                                     if (move_uploaded_file($arquivo_tmp, $destino) && move_uploaded_file($arquivo_tmp2, $destino2) && move_uploaded_file($arquivo_tmp3, $destino3)) {
 
 
-                                        
-                                        echo 'Arquivo salvo com sucesso em : <strong>' . $destino . '</strong><br />';
-                                        echo '<br>';
-                                        echo 'Arquivo salvo com sucesso em : <strong>' . $destino2 . '</strong><br />';
-                                        echo '<br>';
-                                        echo 'Arquivo salvo com sucesso em : <strong>' . $destino3 . '</strong><br />';
-                                        echo '<br />---------------------------------------------------------------------------------------<br />';
-                                        echo '<textarea cols="100%" readonly="" > ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho . '  </textarea>';
-                                        echo '<br>';
-                                        echo '<textarea cols="100%" readonly=""> ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho2 . '  </textarea>';
-                                        echo '<br>';
-                                        echo '<textarea cols="100%"readonly="" > ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho3 . '  </textarea>';
+
+                                        echo '<p class="text-info text-capitalize " style="font-size: 18px ; font-family:Roboto ">Poster</p>';
+                                        echo '<textarea cols="65" readonly="" > ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho . '   </textarea>';
+                                        echo '<p class="text-info text-capitalize " style="font-size: 18px ; font-family:Roboto ">Imagem 01</p>';
+                                        echo '<textarea cols="65" readonly=""> ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho2 . '  </textarea>';
+                                        echo '<p class="text-info text-capitalize " style="font-size: 18px ; font-family:Roboto ">imagem 02</p>';
+                                        echo '<textarea cols="65"readonly="" > ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho3 . '  </textarea>';
                                         echo '</div>';
                                     } else {
 
