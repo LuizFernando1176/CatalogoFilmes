@@ -1,8 +1,11 @@
 <?php
 include_once '../util/corpo.php';
 include_once '../util/conectarBD.php';
+include_once '../select/selects.php';
 cabeca();
-$queryBuscaCategoria =;
+
+
+//$queryBuscaCategoria =;
 ?>
 <div class="main-panel">
     <div class="content-wrapper">
@@ -87,10 +90,7 @@ $queryBuscaCategoria =;
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Categoria:</label>
                                     <div class="col-sm-9">
-                                        <select class="form-control" id="exampleSelectGender">
-                                            <option>Male</option>
-                                            <option>Female</option>
-                                        </select>
+                                        <?php echo selectCategoria(); ?>
                                     </div>
                                 </div>
                             </div>
@@ -160,4 +160,3 @@ $queryBuscaCategoria =;
 </div>
 <?php
 rodape();
-?>

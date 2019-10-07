@@ -1,6 +1,10 @@
 <?php
 include_once 'corpo02.php';
-//$urlSite=""; // implementar a variavel do site 
+include_once 'conectarBD.php';
+$coon = conectar();
+$queryBusca=" SELECT * FROM `urlsistema`";
+$respotaBusca = mysqli_query($coon, $queryBusca);
+$url = mysqli_fetch_assoc($respotaBusca );
 cabeca();
 ?>
 
@@ -71,11 +75,11 @@ cabeca();
 
 
                                         echo '<p class="text-info text-capitalize " style="font-size: 18px ; font-family:Roboto ">Poster</p>';
-                                        echo '<textarea cols="65" readonly="" > ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho . '   </textarea>';
+                                        echo '<textarea cols="65" readonly="" > ' . $url['url']."img/" . $caminho . '   </textarea>';
                                         echo '<p class="text-info text-capitalize " style="font-size: 18px ; font-family:Roboto ">Imagem 01</p>';
-                                        echo '<textarea cols="65" readonly=""> ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho2 . '  </textarea>';
+                                        echo '<textarea cols="65" readonly=""> ' . $url['url']."img/" . $caminho2 . '   </textarea>';
                                         echo '<p class="text-info text-capitalize " style="font-size: 18px ; font-family:Roboto ">imagem 02</p>';
-                                        echo '<textarea cols="65"readonly="" > ' . "http://localhost/catalogoFilmes/pictures/img/" . $caminho3 . '  </textarea>';
+                                        echo '<textarea cols="65"readonly="" > ' . $url['url']."img/" . $caminho3 . '   </textarea>';
                                         echo '</div>';
                                     } else {
 

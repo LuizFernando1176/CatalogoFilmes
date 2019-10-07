@@ -24,8 +24,8 @@ function cabeca() {
             <!-- partial:partials/_navbar.html -->
             <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
                 <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                    <a class="navbar-brand brand-logo mr-5" href="index.php"><img src="' . urlbase() . '/img/logo.svg" class="mr-2" alt="logo"/></a>
-                    <a class="navbar-brand brand-logo-mini" href="index.php"><img src="' . urlbase() . '/img/logo-mini.svg" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo mr-5" href="' . urlbase() . '/index.php"><img src="' . urlbase() . '/img/logo.svg" class="mr-2" alt="logo"/></a>
+                    <a class="navbar-brand brand-logo-mini" href="' . urlbase() . '/index.php"><img src="' . urlbase() . '/img/logo-mini.svg" alt="logo"/></a>
                 </div>
                 <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
                     <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -73,7 +73,7 @@ function cabeca() {
                             </a>
                         </li>
                         <li class="nav-item">
-                              <a class="nav-link" href="#">
+                              <a class="nav-link" href="' . urlbase() . '/pictures/perfil.php">
                                 <i class="ti-user menu-icon"></i>
                                 <span class="menu-title">Perfil</span>
                             </a>
