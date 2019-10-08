@@ -1,6 +1,7 @@
 <?php
 include_once '../util/corpo.php';
 include_once '../util/conectarBD.php';
+include_once '../util/config.php';
 include_once '../select/selects.php';
 cabeca();
 
@@ -94,11 +95,22 @@ cabeca();
                                     </div>
                                 </div>
                             </div>
+                            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+                            <script type="text/javascript" src="../js/jquery.tokeninput.js"></script>
+                            <script type="text/javascript" src="../css/token-input.css"></script>
+                          <script type="text/javascript">
+                                   $(document).ready(function () {
+                                       $("#search").autocomplete({
+                                           source: "' . urlbase() . '/util/buscaAtor.php",
+                                           minLength: 0
+                                       });
+                                   });
+                               </script>
                             <div class="col-md-8">
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Ator:</label>
                                     <div class="col-sm-9">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" id="search" type="text" name="id_setor" placeholder="Busca por Setor"/>
                                     </div>
                                 </div>
                             </div>

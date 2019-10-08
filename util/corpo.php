@@ -4,7 +4,6 @@ include_once 'config.php';
 testaSessao();
 $usuarioLogado = json_decode($_SESSION["gmUsuarioLogado"], true);
 
-
 // estes conjuntos de função são criados para que não precise se repetido o codigo do corpo do sistema 
 
 function cabeca() {
@@ -19,6 +18,9 @@ function cabeca() {
         <title>Sistema de Filmes e Serie</title>
         <link rel="stylesheet" href="' . urlbase() . '/css/themify-icons.css">
         <link rel="stylesheet" href="' . urlbase() . '/css/vendor.bundle.base.css">
+        <link rel="stylesheet" href="' . urlbase() . '/css/token-input-facebook.css">
+        <link rel="stylesheet" href="' . urlbase() . '/css/token-input-mac.css">
+        <link rel="stylesheet" href="' . urlbase() . '/css/token-input.css">
         <link rel="stylesheet" href="' . urlbase() . '/css/style.css">
         <link rel="shortcut icon" href="' . urlbase() . '/img/favicon.png" />
     </head>
@@ -124,6 +126,7 @@ function rodape() {
         <script src="' . urlbase() . '/js/template.js"></script>
         <script src="' . urlbase() . '/js/todolist.js"></script>
         <script src="' . urlbase() . '/js/dashboard.js"></script>
+        <script src="' . urlbase() . '/js/jquery.tokeninput.js"></script>
 
     </body>
 

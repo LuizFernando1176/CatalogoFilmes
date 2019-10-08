@@ -12,7 +12,7 @@
 // Default settings
 var DEFAULT_SETTINGS = {
 	// Search settings
-    method: "GET",
+    method: "POST",
     contentType: "json",
     queryParam: "q",
     searchDelay: 300,
@@ -21,9 +21,9 @@ var DEFAULT_SETTINGS = {
     jsonContainer: null,
 
 	// Display settings
-    hintText: "Type in a search term",
-    noResultsText: "No results",
-    searchingText: "Searching...",
+    hintText: "Digite um termo de pesquisa",
+    noResultsText: "Sem Resultados",
+    searchingText: "Pesquisando...",
     deleteText: "&times;",
     animateDropdown: true,
 
