@@ -5,3 +5,6 @@ if(isset($_POST['submit'])){
     // Convert skills ids string to array
     $selected_skills_arr = explode(',', $selected_skills_ids);
 }
+
+
+https://www.codexworld.com/autocomplete-multiselect-textbox-multiple-selection-jquery-php/
