@@ -1,0 +1,7 @@
+if(isset($_POST['submit'])){
+    // Get selected skills
+    $selected_skills_ids = $_POST['skill_input'];
+    
+    // Convert skills ids string to array
+    $selected_skills_arr = explode(',', $selected_skills_ids);
+}
