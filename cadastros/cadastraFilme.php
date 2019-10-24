@@ -1,6 +1,7 @@
 <?php
 include_once '../util/corpo.php';
 include_once '../util/conectarBD.php';
+//include_once 'search.php';
 include_once '../util/config.php';
 include_once '../select/selects.php';
 cabeca();
@@ -39,7 +40,7 @@ cabeca();
             <div class="card">
                 <div class="card-body">
                     <center> <h2 class="card-title">Cadastro de Filmes</h2></center>
-                    <form class="form-sample">
+                    <form class="form-sample" method="POST">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group row">
@@ -95,22 +96,29 @@ cabeca();
                                     </div>
                                 </div>
                             </div>
-                            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-                            <script type="text/javascript" src="../js/jquery.tokeninput.js"></script>
-                            <script type="text/javascript" src="../css/token-input.css"></script>
-                          <script type="text/javascript">
-                                   $(document).ready(function () {
-                                       $("#search").autocomplete({
-                                           source: "' . urlbase() . '/util/buscaAtor.php",
-                                           minLength: 0
-                                       });
-                                   });
-                               </script>
+                            <!-- jQuery library -->
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+                            <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                            <!-- Tokeninput plugin library -->
+                            <script src="../js/jquery.tokeninput.js"></script>
+                            <link rel="stylesheet" href="../css/token-input.css" />
+                            <script>
+                                $(document).ready(function () {
+                                    $("#skill_input").tokenInput("search.php", {
+                                        deleteText: "&times;",
+                                        minChars: 1,
+                                        propertyToSearch: "ator",
+                                        hintText: "Procure o Ator...",
+                                        noResultsText: "Ator não encontrado.",
+                                        searchingText: "Procurando..."
+                                    });
+                                });
+                            </script>
                             <div class="col-md-8">
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Ator:</label>
                                     <div class="col-sm-9">
-                                        <input class="form-control" id="search" type="text" name="id_setor" placeholder="Busca por Setor"/>
+                                        <input id="skill_input" />
                                     </div>
                                 </div>
                             </div>

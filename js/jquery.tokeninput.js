@@ -12,7 +12,7 @@
 // Default settings
 var DEFAULT_SETTINGS = {
 	// Search settings
-    method: "POST",
+    method: "GET",
     contentType: "json",
     queryParam: "q",
     searchDelay: 300,
@@ -21,9 +21,9 @@ var DEFAULT_SETTINGS = {
     jsonContainer: null,
 
 	// Display settings
-    hintText: "Digite um termo de pesquisa",
-    noResultsText: "Sem Resultados",
-    searchingText: "Pesquisando...",
+    hintText: "Type in a search term",
+    noResultsText: "No results",
+    searchingText: "Searching...",
     deleteText: "&times;",
     animateDropdown: true,
 
@@ -185,7 +185,7 @@ $.TokenList = function (input, url_or_data, settings) {
     var input_val;
 
     // Create a new text input an attach keyup events
-    var input_box = $("<input type=\"text\"  autocomplete=\"off\">")
+    var input_box = $("<input type=\"text\"  class=\"form-control\" name=\"ator\" autocomplete=\"off\">")
         .css({
             outline: "none"
         })
