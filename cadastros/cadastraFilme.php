@@ -116,10 +116,20 @@ cabeca();
                             </script>
                             <div class="col-md-8">
                                 <div class="form-group row">
-                                    <label class="col-sm-3 col-form-label">Ator:</label>
+
+                                    <label class="col-sm-3 col-form-label">Ator:</label> 
+
                                     <div class="col-sm-9">
                                         <input id="skill_input" />
-                                    </div>
+                                        
+                                    </div><center>
+                                            <div class="col-md-6">
+                                                <button type="button" class="btn btn-outline-primary " data-toggle="modal" data-target="#modalExemplo">
+                                                    Adicionar Ator/Atriz
+                                                </button>                                    
+                                            </div></center>
+
+
                                 </div>
                             </div>
                             <div class="col-md-8">
@@ -174,6 +184,26 @@ cabeca();
             </div>
 
             </form>
+            <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cadastro de Ator</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form action="../inserir/inserirAtorModal.php" method="POST" >
+                            <div class="modal-body">
+                                Nome do Ator : <br><input class="form-control" name="ator"><br>
+                                <button type="submit" class="btn btn-primary" >Cadastrar</button>
+                                <button type="reset" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
