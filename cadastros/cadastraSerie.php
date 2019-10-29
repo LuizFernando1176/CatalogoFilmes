@@ -39,7 +39,7 @@ cabeca();
         <div class="row col-md-12">
             <div class="card">
                 <div class="card-body">
-                    <center> <h2 class="card-title">Cadastro de Filmes</h2></center>
+                    <center> <h2 class="card-title">Cadastro de Series de TV</h2></center>
                     <form class="form-sample" method="POST">
                         <div class="row">
                             <div class="col-md-12">
@@ -55,6 +55,14 @@ cabeca();
                                     <label class="col-sm-2 col-form-label">Nome Original:</label>
                                     <div class="col-sm-5">
                                         <input class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Temporada Episódio:</label>
+                                    <div class="col-sm-5">
+                                        <input class="form-control" type="text" name="" placeholder="Ex:T01EP01">
                                     </div>
                                 </div>
                             </div>

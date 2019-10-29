@@ -9,7 +9,7 @@ function selectCategoria() {
     echo '<select class="form-control" name="id_categoria"> <option  selected>Escolha sua Categoria</option>';
     while ($queryRespostas = mysqli_fetch_assoc($queryResposta)) {
 
-        echo'<option value="' . utf8_encode($queryRespostas['id'] . '">' . $queryRespostas['categoria']) . '</option>
+        echo'<option value="' . $queryRespostas['id'] . '">' .  $queryRespostas['categoria'] . '</option>
 ';
     }
     echo '</select>';

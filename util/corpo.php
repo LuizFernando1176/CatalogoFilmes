@@ -78,13 +78,14 @@ function cabeca() {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                        <a class="nav-link" href="' . urlbase() . '/cadastros/cadastraFilme.php">
+                     
                                 <i class="ti-layout-list-post menu-icon"></i>
                                 <span class="menu-title">Cadastrar Filmes</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="' . urlbase() . '/cadastros/cadastraFilme.php">
+                               <a class="nav-link" href="#">
                                 <i class="ti-view-list-alt menu-icon"></i>
                                 <span class="menu-title">Cadastrar Series</span>
                             </a>
