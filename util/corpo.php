@@ -84,14 +84,14 @@ function cabeca() {
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="' . urlbase() . '/cadastros/cadastraFilme.php">
                                 <i class="ti-view-list-alt menu-icon"></i>
                                 <span class="menu-title">Cadastrar Series</span>
                             </a>
                         </li>
                         <li class="nav-item">
-                              <a class="nav-link" href="' . urlbase() . '/pictures/index.php">
-                                <i class="ti-archive menu-icon"></i>
+                              <a class="nav-link" href="' . urlbase() . '/pictures/pginicial.php">
+                                <i class="ti-instagram menu-icon"></i>
                                 <span class="menu-title">Hospedar Imagens</span>
                             </a>
                         </li>
