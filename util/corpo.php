@@ -85,7 +85,7 @@ function cabeca() {
                             </a>
                         </li>
                         <li class="nav-item">
-                               <a class="nav-link" href="#">
+                               <a class="nav-link" href="' . urlbase() . '/cadastros/cadastraSerie.php">
                                 <i class="ti-view-list-alt menu-icon"></i>
                                 <span class="menu-title">Cadastrar Series</span>
                             </a>
