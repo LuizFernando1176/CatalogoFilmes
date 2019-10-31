@@ -46,7 +46,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Nome do Filme:</label>
                                     <div class="col-sm-5">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="nome_filme">
                                     </div>
                                 </div>
                             </div>
@@ -54,7 +54,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">Nome Original:</label>
                                     <div class="col-sm-5">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="nome_original">
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +64,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label">Classificação:</label>
                                     <div class="col-sm-4">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="classificacao">
                                     </div>
                                 </div>
                             </div>
@@ -72,7 +72,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-2 col-form-label">IMDB:</label>
                                     <div class="col-sm-4">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="imdb">
                                     </div>
                                 </div>
                             </div>
@@ -82,7 +82,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-4 col-form-label">Lancamento:</label>
                                     <div class="col-sm-4">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="lancamento">
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@ cabeca();
                                     <label class="col-sm-3 col-form-label">Ator:</label> 
 
                                     <div class="col-sm-8">
-                                        <input id="skill_input" /> 
+                                        <input id="skill_input"  name="ator"/> 
                                     </div><button type="button" title="Adicionar Ator/Atriz" class="btn btn-primary btn-rounded btn-icon" data-toggle="modal" data-target="#modalExemplo">
                                                     <i class="ti-plus"></i>
                                                 </button>    
@@ -132,7 +132,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Poster:</label>
                                     <div class="col-sm-9">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="poster">
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Imagem 01:</label>
                                     <div class="col-sm-9">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="img01">
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +148,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Imagem 02:</label>
                                     <div class="col-sm-9">
-                                        <input class="form-control" type="text">
+                                        <input class="form-control" type="text" name="img02">
                                     </div>
                                 </div>
                             </div>
@@ -156,7 +156,7 @@ cabeca();
                                 <div class="form-group row">
                                     <label class="col-sm-3 col-form-label">Descrição:</label>
                                     <div class="col-sm-9">
-                                        <textarea cols="25" rows="10" class="form-control"></textarea>
+                                        <textarea cols="25" rows="10" class="form-control" name="descricao"></textarea>
                                     </div>
                                 </div>
                             </div>
