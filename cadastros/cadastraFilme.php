@@ -40,7 +40,7 @@ cabeca();
             <div class="card">
                 <div class="card-body">
                     <center> <h2 class="card-title">Cadastro de Filmes</h2></center>
-                    <form class="form-sample" method="POST">
+                    <form class="form-sample" method="POST" action="../inserir/inserirFilme.php">
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="form-group row">
@@ -104,7 +104,7 @@ cabeca();
                             <link rel="stylesheet" href="../css/token-input.css" />
                             <script>
                                 $(document).ready(function () {
-                                    $("#skill_input").tokenInput("search.php", {
+                                    $("#ator").tokenInput("search.php", {
                                         deleteText: "&times;",
                                         minChars: 1,
                                         propertyToSearch: "ator",
@@ -120,7 +120,7 @@ cabeca();
                                     <label class="col-sm-3 col-form-label">Ator:</label> 
 
                                     <div class="col-sm-8">
-                                        <input id="skill_input"  name="ator"/> 
+                                        <input id="ator"  name="ator"/> 
                                     </div><button type="button" title="Adicionar Ator/Atriz" class="btn btn-primary btn-rounded btn-icon" data-toggle="modal" data-target="#modalExemplo">
                                                     <i class="ti-plus"></i>
                                                 </button>    
@@ -163,7 +163,7 @@ cabeca();
                         </div>
                         <div class="col-md-6">
                             <center>
-                                <button class="btn btn-outline-primary btn-icon-text" type="submit">
+                                <button class="btn btn-outline-primary btn-icon-text" name="submit" type="submit">
                                     <i class="ti-file btn-icon-prepend"></i>
                                     Enviar 
                                 </button>
