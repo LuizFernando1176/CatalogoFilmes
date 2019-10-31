@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24-Out-2019 às 04:23
--- Versão do servidor: 10.3.15-MariaDB
--- versão do PHP: 7.1.30
+-- Tempo de geração: 31-Out-2019 às 12:00
+-- Versão do servidor: 10.4.8-MariaDB
+-- versão do PHP: 7.1.32
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -54,7 +54,13 @@ INSERT INTO `ator` (`id`, `ator`) VALUES
 (17, 'Sidney Poitier'),
 (18, 'Sean Connery'),
 (19, 'Christian Bale'),
-(20, 'Leonardo DiCaprio');
+(20, 'Leonardo DiCaprio'),
+(21, 'Xuxa'),
+(22, 'Jorge Fernando'),
+(23, 'Fernanda Montenegro'),
+(24, 'Quentin Tarantino'),
+(25, 'Joselito '),
+(26, 'The Rock');
 
 -- --------------------------------------------------------
 
@@ -80,6 +86,49 @@ INSERT INTO `categoria` (`id`, `categoria`) VALUES
 (6, 'Documentario'),
 (7, 'Drama'),
 (8, '+18');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `filmes`
+--
+
+CREATE TABLE `filmes` (
+  `id` int(11) NOT NULL,
+  `nome_filme` varchar(200) NOT NULL,
+  `nome_original` varchar(200) NOT NULL,
+  `classificacao` int(11) NOT NULL,
+  `imdb` varchar(18) NOT NULL,
+  `lancamento` varchar(25) NOT NULL,
+  `id_categoria` int(11) NOT NULL,
+  `ator` varchar(250) NOT NULL,
+  `poster` varchar(250) NOT NULL,
+  `img01` varchar(250) NOT NULL,
+  `img02` varchar(250) NOT NULL,
+  `descricao` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `series`
+--
+
+CREATE TABLE `series` (
+  `id` int(11) NOT NULL,
+  `nome_serie` varchar(200) NOT NULL,
+  `nome_original` varchar(200) NOT NULL,
+  `temporada_ep` varchar(100) NOT NULL,
+  `classificacao` int(11) NOT NULL,
+  `imdb` varchar(18) NOT NULL,
+  `lancamento` varchar(25) NOT NULL,
+  `id_categoria` int(11) NOT NULL,
+  `ator` varchar(250) NOT NULL,
+  `poster` varchar(250) NOT NULL,
+  `img01` varchar(250) NOT NULL,
+  `img02` varchar(250) NOT NULL,
+  `descricao` varchar(500) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
@@ -136,6 +185,18 @@ ALTER TABLE `categoria`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `filmes`
+--
+ALTER TABLE `filmes`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Índices para tabela `series`
+--
+ALTER TABLE `series`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Índices para tabela `urlsistema`
 --
 ALTER TABLE `urlsistema`
@@ -155,13 +216,25 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `ator`
 --
 ALTER TABLE `ator`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
 
 --
 -- AUTO_INCREMENT de tabela `categoria`
 --
 ALTER TABLE `categoria`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT de tabela `filmes`
+--
+ALTER TABLE `filmes`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de tabela `series`
+--
+ALTER TABLE `series`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de tabela `urlsistema`
